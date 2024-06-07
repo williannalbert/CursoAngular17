@@ -1,0 +1,22 @@
+Instalação
+
+Node v20.14.0
+instalação do executavel do site
+
+Angular npm i 17.3.8
+npm i @angular/cli@17.3.8 -g
+--------------------------------------------------------------------------------------
+Criação de projeto
+
+No angular 17 utilizar o comando abaixo, para criação do app.module
+ng new NOME_DO_PROJETO --no-standalone
+
+--------------------------------------------------------------------------------------
+Dicas e observações
+
+*quando criar um novo modulo e incluir components, é necessário incluí-los no exports desse module para serem usados em outros
+**caso um component seja filho de um exportado, não é necessário exportá-lo
+
+*para incluir uma pasta de estilo com o caminho sendo somente a pasta, é necessário incluir no angular.json a configuração "stylePreprocessorOptions"
+
+

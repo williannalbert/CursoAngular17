@@ -19,4 +19,7 @@ Dicas e observações
 
 *para incluir uma pasta de estilo com o caminho sendo somente a pasta, é necessário incluir no angular.json a configuração "stylePreprocessorOptions"
 
-
+*View encapsulation*
+None: retira o encapsulamento do component, transformando o component em "global", e as alterações alteram todo o projeto
+Emulated: encapsulamento padrão do component
+ShadowDom: isola o component e estilos globais não podem alterar suas propriedades. Estilizações feitas no component são aplicadas ao mesmo e seus filhos (não é reconhecido em todos os navegadores)

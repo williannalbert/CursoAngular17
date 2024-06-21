@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { PipesModule } from './pipes/pipes.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   imports: [
     BrowserModule,
     ComponentsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PipesModule
   ],
   providers: [
     provideAnimationsAsync()

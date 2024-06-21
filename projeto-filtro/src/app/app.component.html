@@ -5,10 +5,10 @@
             
         </div>
         <div class="main-left-div">
-            <app-users-list></app-users-list>
+            <app-users-list [usersList]="usersList" (userSelected)="onUserSelected($event)"></app-users-list>
         </div>
     </div>
     <div class="right-div">
-        <app-users-details [user]="userSelected"></app-users-details>
+        <app-users-details [user]="userSelected" *ngIf="showUserDetails"></app-users-details>
     </div>
 </div>

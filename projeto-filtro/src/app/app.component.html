@@ -1,14 +1,16 @@
 <div class="container">
     <div class="left-container">
         <div class="top-div">
-            <app-filter></app-filter>
-            
+            <!-- Conteúdo da div superior -->
+            <app-filter (onFilter)="onFilter($event)"></app-filter>
         </div>
         <div class="main-left-div">
-            <app-users-list [usersList]="usersList" (userSelected)="onUserSelected($event)"></app-users-list>
+            <!-- Conteúdo da div esquerda (80% de altura) -->
+            <app-users-list [usersList]="usersListFiltered" (userSelected)="onUserSelected($event)"></app-users-list>
         </div>
     </div>
     <div class="right-div">
+        <!-- Conteúdo da div direita -->
         <app-users-details [user]="userSelected" *ngIf="showUserDetails"></app-users-details>
     </div>
 </div>

@@ -12,6 +12,9 @@ import { StyleDirective } from './directives/style.directive';
 import { ClassDirective } from './directives/class.directive';
 import { ListenerDirective } from './directives/listener.directive';
 import { InputBackgroundDirective } from './directives/input-background.directive';
+import { FocusSecondInputDirective } from './directives/focus-second-input.directive';
+import { TesteService } from './services/teste.service';
+import { XssComponent } from './xss/xss.component';
 
 
 @NgModule({
@@ -24,7 +27,9 @@ import { InputBackgroundDirective } from './directives/input-background.directiv
     StyleDirective,
     ClassDirective,
     ListenerDirective,
-    InputBackgroundDirective
+    InputBackgroundDirective,
+    FocusSecondInputDirective,
+    XssComponent,
   ],
   imports: [
     BrowserModule,

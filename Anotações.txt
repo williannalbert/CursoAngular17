@@ -24,6 +24,7 @@ None: retira o encapsulamento do component, transformando o component em "global
 Emulated: encapsulamento padrão do component
 ShadowDom: isola o component e estilos globais não podem alterar suas propriedades. Estilizações feitas no component são aplicadas ao mesmo e seus filhos (não é reconhecido em todos os navegadores)
 
+*utilizar a biblioteca date.fns para manipulação de datas
+npm i date-fns
 
-
-
+*o uso de ElementRef pode proporcionar o uso de XXS (Cross site scripting), e deixar a aplicação vulneravel pr estar acessando diretamente o DOM. usar a classe Rendler2 do angular para manipular o html
